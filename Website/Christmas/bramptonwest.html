@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="thumb-info-caption p-4">
                                     <h3 class="font-weight-semibold text-transform-none mb-3"><a href="#" class="text-color-primary text-5 ">Sun Glasses</a></h3>
-                                    <p>At Vision Express, we carry a wide variety of designer brands including: Hugo boss, Armani, Prada, Versace, Burberries, Rayban, Michael Cors, Tory burch, Coach, Mau Gym, D&G, Polo.</p>
+                                    <p>At Vision Express, we carry a wide variety of designer brands including: Hugo boss, Armani, Prada, Versace, Burberry, Rayban, Michael Kors, Tory burch, Coach, Maui Jim, D&G, Polo.</p>
                                     <a href="/" data-scroll-nav="6" class="read-more text-color-primary font-weight-semibold text-3 mt-3">Contact Now <i class="fas fa-angle-right position-relative top-1 ml-1"></i></a>
                                 </div>
 
@@ -355,7 +355,7 @@
                                     <img src="img/service-img4.jpg" class="img-fluid" alt="">
                                     <span class="thumb-info-title bg-transparent mb-4 pl-4 ml-2">
                                         <span class="thumb-info-type font-weight-light text-2 line-height-1 opacity-8">Glaucoma is a common eye disease characterized by increased fluid</span>
-                                        <span class="thumb-info-inner font-weight-bold text-4 line-height-4">Claucoma</span>
+                                        <span class="thumb-info-inner font-weight-bold text-4 line-height-4">Glaucoma</span>
                                         <span class="thumb-info-show-more-content pr-3">
                                             <p class="mb-0 text-2 line-height-9 pr-5 mr-5 mb-3 mt-2">Glaucoma is a common eye disease characterized by increased fluid pressure in the eye that damages the optic nerve, which carries visual impulses to the brain. Glaucoma can be caused by another eye disorder, such as a tumor or congenital malformation, or it can appear without obvious cause.</p>
                                             <a href="#" data-scroll-nav="6" class="d-inline-flex align-items-center btn btn-light text-color-dark font-weight-bold px-2 btn-py-1 text-2 rounded"><span class="text-2 py-1 pl-2">LEARN MORE</span> <i class="fa fa-arrow-right ml-2 mr-2 pl-4 text-3"></i></a>
@@ -860,7 +860,7 @@
                                     <div class="col">
                                         <form class="contact-form form-style-2 form-errors-light" action="php/contact-form.php" method="POST" novalidate="novalidate">
                                             <!--START PAGE WISE SET INPUT HIDDEN LOCATION -->
-                                            <input type="hidden" name="location" id="bookLocation" value="Brampton West">
+                                            <!--<input type="hidden" name="location" id="bookLocation" value="Surrey">-->
                                             <!--END PAGE WISE SET INPUT HIDDEN LOCATION -->
                                             <div class="form-row">
                                                 <div class="form-group col-lg-6">
@@ -872,19 +872,35 @@
                                                 <div class="form-group col-lg-12">
                                                     <input type="email" value="" data-msg-required="Please enter your email." maxlength="100" class="form-control" id="bookEmail" name="email" placeholder="Your Email..." required="">
                                                 </div>
+                                                <div class="form-group col-lg-12">
+                                                    <select class="form-control py-0" id="bookLocation">
+                                                        <option value="">Select Location</option>
+                                                        <option value="Surrey">Surrey</option>
+                                                        <option value="Brampton West">Brampton West</option>
+                                                        <option value="Brampton Central">Brampton Central</option>
+                                                        <option value="Brampton East">Brampton East</option>
+                                                        <option value="Mississauga">Mississauga</option>
+                                                        <option value="Markham">Markham</option>
+                                                        <option value="Guelph">Guelph</option>
+                                                        <option value="Burlington">Burlington</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-lg-6">
-                                                    <select class="form-control py-0" id="bookDay">
-                                                        <option value="">Select Any Day</option>
-                                                        <option value="Monday">Monday</option>
-                                                        <option value="Tuesday">Tuesday</option>
-                                                        <option value="Wednesday">Wednesday</option>
-                                                        <option value="Thursday">Thursday</option>
-                                                        <option value="Friday">Friday</option>
-                                                        <option value="Saturday">Saturday</option>
-                                                        <option value="Sunday">Sunday</option>
-                                                    </select>
+                                                    <!--<select class="form-control py-0" id="bookDay">
+                        <option value="">Select Any Day</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+
+                    <label for="birthday">Birthday:</label>-->
+                                                    <input type="date" id="bookDate" name="bookDate">
                                                 </div>
                                                 <div class="form-group col-lg-6">
                                                     <select class="form-control py-0" id="bookTime">
