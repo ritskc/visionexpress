@@ -1,4 +1,4 @@
-const uri= 'https://questapi.yellow-chips.com/email';
+const uri = 'https://questapi.yellow-chips.com/email';
 
 let todos = [];
 
@@ -8,7 +8,7 @@ function addItem() {
     const phoneTextbox = document.getElementById('conPhoneNumber');
     const subjetTextbox = document.getElementById('conSubjectText');
     const detailTextbox = document.getElementById('conMessageText');    
-    
+
     
     const item = {        
         name: nameTextbox.value.trim(),
@@ -41,15 +41,25 @@ function bookAppointment() {
     const nameTextbox = document.getElementById('bookFullName');
     const phoneTextbox = document.getElementById('bookPhoneNumber');
     const emailTextbox = document.getElementById('bookEmail');
-    const dayTextbox = document.getElementById('bookDay');
+    const dayTextbox = document.getElementById('bookDate');
     const timeTextbox = document.getElementById('bookTime');
     const locationTextbox = document.getElementById('bookLocation');
 
+    if (nameTextbox.value.trim() == '') {
+        alert('Please enter your name');
+        return;
+    }
+
+    if (emailTextbox.value.trim() == '' && phoneTextbox.value.trim() == '') {
+        alert('Please either provide Phone number or Email id to contact you.');
+        return;
+    }
+    
     const item = {       
         name: nameTextbox.value.trim(),
         phoneNo: phoneTextbox.value.trim(),
         email: emailTextbox.value.trim(),
-        day: dayTextbox.value.trim(),
+        DateTime: dayTextbox.value.trim(),
         time: timeTextbox.value.trim(),
         location: locationTextbox.value.trim(),
         source: 'visionexpress',
