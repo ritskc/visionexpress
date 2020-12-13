@@ -860,7 +860,7 @@
                                     <div class="col">
                                         <form class="contact-form form-style-2 form-errors-light" action="php/contact-form.php" method="POST" novalidate="novalidate">
                                             <!--START PAGE WISE SET INPUT HIDDEN LOCATION -->
-                                            <input type="hidden" name="location" id="bookLocation" value="Brampton Central">
+                                            <!--<input type="hidden" name="location" id="bookLocation" value="Surrey">-->
                                             <!--END PAGE WISE SET INPUT HIDDEN LOCATION -->
                                             <div class="form-row">
                                                 <div class="form-group col-lg-6">
@@ -872,19 +872,35 @@
                                                 <div class="form-group col-lg-12">
                                                     <input type="email" value="" data-msg-required="Please enter your email." maxlength="100" class="form-control" id="bookEmail" name="email" placeholder="Your Email..." required="">
                                                 </div>
+                                                <div class="form-group col-lg-12">
+                                                    <select class="form-control py-0" id="bookLocation">
+                                                        <option value="">Select Location</option>
+                                                        <option value="Surrey">Surrey</option>
+                                                        <option value="Brampton West">Brampton West</option>
+                                                        <option value="Brampton Central">Brampton Central</option>
+                                                        <option value="Brampton East">Brampton East</option>
+                                                        <option value="Mississauga">Mississauga</option>
+                                                        <option value="Markham">Markham</option>
+                                                        <option value="Guelph">Guelph</option>
+                                                        <option value="Burlington">Burlington</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-lg-6">
-                                                    <select class="form-control py-0" id="bookDay">
-                                                        <option value="">Select Any Day</option>
-                                                        <option value="Monday">Monday</option>
-                                                        <option value="Tuesday">Tuesday</option>
-                                                        <option value="Wednesday">Wednesday</option>
-                                                        <option value="Thursday">Thursday</option>
-                                                        <option value="Friday">Friday</option>
-                                                        <option value="Saturday">Saturday</option>
-                                                        <option value="Sunday">Sunday</option>
-                                                    </select>
+                                                    <!--<select class="form-control py-0" id="bookDay">
+                        <option value="">Select Any Day</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+
+                    <label for="birthday">Birthday:</label>-->
+                                                    <input type="date" id="bookDate" name="bookDate">
                                                 </div>
                                                 <div class="form-group col-lg-6">
                                                     <select class="form-control py-0" id="bookTime">
